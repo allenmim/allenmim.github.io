@@ -1,36 +1,140 @@
 
 <!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-<meta charset="utf-8" />
-<
-<iframe src="ff.html" id="player" width="100%" height="450px" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
-</div>
-<div class="cnt-3 clear">
-<form method="get">
-<div class="cnt-3-1">
-<select class="form-control input-lg" id="jk">
-<option value="https://api.sigujx.com/jx/?url=">推荐高清接口</option>
-<option value="http://jqaaa.com/jx.php?url=">①号引擎【稳定通用】</option>
-<option value="http://yun.baiyug.cn/vip/index.php?url=">②号引擎【稳定通用】</option>
-<option value="http://jqaaa.com/jq3/?url=">③号引擎【稳定快速】</option>
-<option value="https://jiexi.071811.cc/jx2.php?url=">④号引擎【稳定通用】</option>
-<option value="http://jx.du2.cc/?url=">⑤号引擎【左上点播】</option>
-<option value="http://api.bbbbbb.me/jx/?url=">⑥号引擎【稳定通用】</option>
-<option value="http://jx.598110.com/?url=">⑦号引擎【稳定通用】</option>
-<option value="https://api.47ks.com/webcloud/?v=">⑧号引擎【稳定通用】</option>
-<option value="http://jx.618ge.com/?url=">⑨号引擎【稳定通用】</option>
-<option value="http://beaacc.com/api.php?url=">⑩号引擎【超级通用】</option>
-<option value="http://app.baiduoos.cn:2019/vip/index.php?url=">⑪号引擎【超级通用】</option>
-<option value="http://jx.wslmf.com/?url=">⑫号引擎【稳定通用】</option>
-<option value="http://beaacc.com/api.php?url=">⑬号引擎【稳定通用】</option>
-</select>
-</div>
-<div class="cnt-3-2">
-<input class="form-control input-lg" type="search" placeholder="输入需要会员的视频播放地址" id="url" autocomplete="off">
-</div>
-<div class="cnt-3-3">
-&nbsp;
-<button id="bf" type="button" class="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; dihejk()" data-cf-modified-499862fd6f6d92b0c0bc5dcb-="">播放</button>
-&nbsp;
-<button id="bf" type="button" class="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; dihejk2()" data-cf-modified-499862fd6f6d92b0c0bc5dcb-="">全屏播放</button>
+<html xmlns="http://www.thymeleaf.org">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>全民解析-vip视频在线解析</title>
+
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <meta name="keywords" content="vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析,vip音乐解析">
+    <meta name="description" content="全民解析VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <meta name="bytedance-verification-code" content="9HFkjcM0R0WGL7UF2HRo" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+        marquee{font:32px "宋体"}
+        h1 {
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+
+        .unit-100 a {
+            text-decoration: none;
+            display: inline-block;
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            border: 3px solid #5cb85c;
+            margin-right: 14px;
+            /*padding-top: 5px;*/
+            padding-right: 20px;
+            /*padding-bottom: 5px;*/
+            padding-left: 20px;
+            margin-bottom: 5px;
+            color: #FFFFFF;
+            background: #5cb85c;
+            border-radius: 5px;
+        }
+
+
+        .myshuoming ul li {
+            margin-bottom: 10px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #777;
+        }
+
+        .footer ul li {
+            list-style: none;
+        }
+
+        .wenxin ul:first-child {
+        }
+
+        .wenxin ul li a {
+            text-decoration: none;
+            color: #FFFFFF;
+            background: #5cb85c;
+            display: inline-block;
+            padding:3px 10px;
+            border-radius:5px;
+        }
+
+    </style>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body background="/img/bj.png">
+<div class="container">
+
+
+    <!--<input type="hidden" id="userId" value="#userId==null?'':userId">-->
+    <!--<marquee align="absmiddle" bgcolor="#DCE2F1"  padding-top="40"   height="50" align="center" cellpadding="0" cellspacing="0" >由于近期用户数大增,服务器带宽等成本加大，为更好的服务用户，本网站将于近期推出每个用户每月1块钱的收费制度，感谢各位的谅解和支持。</marquee>-->
+    <section class="topbar">
+        <h1 class="text-center" style="font-weight: normal; color: #777">蚂蚁vip视频在线解析</h1>
+        <h3 class="text-center" style="font-weight: normal; color: #777">免费全网影视VIP视频vip会员免广告看电影！ 若播放异常，刷新，更换接口尝试哦！</h3>
+    </section>
+
+    <section class="content">
+        <section>
+            <div class="text-center" id="videodiv">
+
+
+                
+
+                <iframe id="iframId" width=100% height=350  src="https://z1.m1907.cn/?jx=" frameborder=0 allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section class="" style="margin-top: 30px;">
+
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">选择接口</div>
+                    <select class="form-control jiekou">
+                        <!--<option value="1" selected="">七号通用vip引擎系统【稳定通用】</option>-->
+                        <!--<option value="2" selected="">六号通用vip引擎系统【稳定通用】</option>-->
+                        <!--<option value="3" selected="">五号通用vip引擎系统【超级稳定通用】</option>-->
+                        <!--<option value="4" selected="">四号通用vip引擎系统【稳定通用】</option>-->
+                        <!--<option value="5" selected="">三号通用vip引擎系统【稳定通用】</option>-->
+                        <!--<option value="6" selected="">二号通用vip引擎系统【稳定通用】</option>-->
+                        <!--<option value="7" >一号通用vip引擎系统【稳定通用】</option>-->
+                        <!--<option value="8" selected="true">默认引擎系统【稳定通用】</option>-->
+
+                        <option value="http://jx.du2.cc/?url=">一号通用vip引擎系统【稳定通用</option>
+
+                        <option value="http://jx.drgxj.com/?url=">二号通用vip引擎系统【稳定通用</option>
+
+                        <option value="http://vip.jlsprh.com/?url=">三号通用vip引擎系统【稳定通用</option>
+
+                        <option value="https://jiexi.380k.com/?url=">六号通用vip引擎系统【稳定通用</option>
+
+                        <option value="http://jx.598110.com/?url=">五号通用vip引擎系统【稳定通用</option>
+
+                        <option value="https://z1.m1907.cn/?jx=">七号通用vip引擎系统【稳定通用</option>
+
+                        <option value="http://vip.jlsprh.com/?url=">四号通用vip引擎系统【稳定通用</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">输入网址</div>
+                    <input type="text" class="form-control" id="inputUrl" placeholder="请输入视频网址" />
+                </div>
+            </div>
+
+            <button type="button" id="btnOk"  style="margin-bottom: 10px;" class="btn btn-success btn-lg btn-block"><i class="fa">搜索</i></button>
+        </section>
