@@ -7,3 +7,79 @@
 <input type="button" value="线路五" onclick='qie("http://jqaaa.com/jx.php?url=");return false;'><font color="red">)</font>
 <iframe src="http://api.baiyug.cn/vip/index.php?url=" name="ifplayer" width="100%"height="93%" id="ifplayer" allowTransparency="true" allowfullscreen="true" allowtransparency="true" frameborder="0"scrolling="no"></iframe>
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2222</title>
+    
+    <div class="centers">
+        <select style="border:0px;font-size:18px" onchange="xuanzejiekou(this)" id="vip_iterface">
+               <option  value='https://api.jiexi.la/?url='>万能接口1</option>
+               <option  value='https://api.3jx.top/vip/?url='>万能接口2</option>
+               <option  value='https://jx.618g.com/?url='>万能接口3</option>
+               <option  value='https://jiexi.380k.com/?url='>万能接口4</option>
+               <option  value='https://api.sigujx.com/?url='>万能接口5</option>
+               <option  value='https://z1.m1907.cn/?jx='>万能接口6</option>
+               <option  value='https://cdn.yangju.vip/k/?url='>万能接口7</option>
+        </select>
+        <div class="searchs">
+            <div class="from">
+                <input name="url" id="url" type="text" class="text"
+                      placeholder="视频地址">
+                <input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="立即播放">
+            </div>
+            <div id="clear"></div>
+        </div>
+        <div id="ckplays">
+            <iframe   width="90%"  height='900px' frameborder='0' style="background-color: #ecf5ff" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"    allow="autoplay"   id="jiekou"     ></iframe>
+
+        </div>
+        <div class="tips">
+            <div id="clear" class="height20"></div>
+
+            </div>	
+            <script type="text/javascript">	
+                $("#doplayers").bind("click", function () {	
+                    players()	
+                });	
+
+                function players() {	
+                    var a = $('#url').val();	
+                    if ($('#url').val() == "") {	
+                        alert('请输入视频网站网址！');	
+                        $('#url').focus();	
+                        return (false)	
+                    }	
+                }	
+
+                var jiekou = $("#vip_iterface").val();	
+                function jiexi() {	
+                    var url = document.getElementById("url").value;	
+                    var dizhi = ""	
+
+                    if (url.indexOf("://") == -1) {	
+                        url = "http://" + document.getElementById("url").value;	
+                    }	
+
+
+
+                    if (jiekou == "") {	
+                        document.getElementById("jiekou").src = "http://jiexi.shunyiwenxiu.com/?url=" + url;	
+                    } else {	
+                        document.getElementById("jiekou").src = jiekou + url;	
+                    }	
+                }	
+
+                function xuanzejiekou(v) {	
+                    var url = document.getElementById("url").value;	
+                    if (url == "") {	
+                        alert('请输入视频网站网址！');	
+                    } else {	
+                        jiekou = v.value	
+                    }	
+                }	
+            </script>	
+        </div>	
+    </div>	
+</div>
