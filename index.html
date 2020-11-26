@@ -1,74 +1,55 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>初代网-vip视频在线解析</title>
+  <meta name="keywords" content="初代网,vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析,vip音乐解析" />
+  <meta name="description" content="VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/global.css?id=14441">
+</head>
+<body>
 
-<!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-			    
-      	</div>
+
+
+<!--视频 开始-->
+<div class="shipin" style="margin:auto; text-align:center"></div>
+<!--视频 结束-->
+
+
+<!--vip接口 开始-->
+<div class="jiekou layui-form">
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">请选择接口</label>
+    <div class="layui-input-inline">
+      <select name="api" id="api">		
+		<option value="http://api.bbbbbb.me/jx/?url=">默认</option>
+		<option value="http://vip.jlsprh.com/?url=">线路1</option>
+		<option value="http://api.bbbbbb.me/jiexi/?url=">线路2</option>
+		<option value="http://jx.598110.com/?url=">线路3</option>
+		<option value="https://www.administratorw.com/video.php?url=">线路4</option>
+		<option value="http://jiexi.071811.cc/jx.php?url=">线路5</option>
+		<option value="https://jx.618g.com/?url=">线路6</option>
+      </select>
     </div>
-</nav>
-    <br />
-    <div class="container" style="padding-top:50px;">
-      <div class="col-md-14 column">
-        <div class="panel panel-default">
-          <div class="panel-body">
-
-	   
-	  
-	 </br>
-	  
-	  
-	 </br>
-	  
-      <div class="col-md-14 column">
-        <div class="panel panel-default">
-          <div class="panel-body">
-			<iframe width="100%" height="600px" allowTransparency="true" frameborder="0" scrolling="no"  allowfullscreen="true" src="https://jiexi.380k.com/?url=&url=https://www.iqiyi.com/v_19rv7ee29s.html?src=focustext_1_20130410_1"></iframe>
-			
-          </div>
-        </div>
-      </div>
-      <div class="col-md-14 column">
-        <form method="get">
-<div class="input-group" style="width: 100%;">
-   <span class="input-group-addon input-lg" style="width: 80px;">选择接口</span>
-            	<select class="form-control input-lg" name="jk">
-                    	<option value ="https://jiexi.380k.com/?url=">通用vip接口①（支持优酷/爱奇艺原画，超级稳定）
-</option>
-<option value ="https://jiexi.380k.com/?url=">通用vip接口②（支持优酷/爱奇艺原画)</option>
-<option value ="https://jx.618ge.com/?url=">通用vip接口③）</option>
-<option value ="https://jx.du2.cc/?url=">通用vip接口④）</option>
-<option value ="http://jx.daheiyun.com/?url=">通用vip接口⑤速度快稳定）</option>
-<option value ="https://vip.jlsprh.com/?url=">芒果VIP解析（超清）</option>
-<option value ="https://jiexi.380k.com/?url=">备用VIP解析接口（超清）</option>                	</select>
-</div><br>
-          <div class="input-group" style="width: 100%;">
-            <span class="input-group-addon input-lg" style="width: 80px;">播放地址</span>
-            <input class="form-control input-lg" type="text" name="url" placeholder="输入播放地址"></div>
-          <br>
-          <div>
-            <button type="submit" class="btn btn-default btn-lg btn-block">立即播放</button></div>
-        </form>
-      </div>
+	<div class="layui-input-inline" style="width:500px;">
+      <input type="text" name="url" id="url" lay-verify="url" autocomplete="off" placeholder="请输入视频地址" class="layui-input">
     </div>
-    <br>
-    <br>
-    <script>(function() {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-      })();</script>
-    <div class="copyright">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-sm-12">
-            <br>
-			
+	<div class="layui-input-inline">
+      <button class="layui-btn layui-btn-normal" id="save">立即播放</button>
+    </div>
+    <div class="layui-input-inline">
+  </div>
+  
+	
+</div>
+<!--vip接口 结束-->
+
+<div id="mobile" style="margin:20px; text-align:center"></div>
