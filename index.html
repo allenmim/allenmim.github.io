@@ -2,25 +2,23 @@
 <div class="centers">
 <select style="border:0px;font-size:14px" onchange="xuanzejiekou(this)" id="vip_iterface">
     
-
+    <option  <font color="red">选择线路 </option>   
     
-<option  <font color="red">选择线路 </option>   
-    
-               <option  value='https://api.jiexi.la/?url='>万能接口1</option>
                <option  value='https://api.3jx.top/vip/?url='>万能接口2</option>
                <option  value='https://jx.618g.com/?url='>万能接口3</option>
                <option  value='https://jiexi.380k.com/?url='>万能接口4</option>
                <option  value='https://api.sigujx.com/?url='>万能接口5</option>
                <option  value='https://z1.m1907.cn/?jx='>万能接口6</option>
-               <option  value='https://cdn.yangju.vip/k/?url='>万能接口7</option>        
+               <option  value='https://cdn.yangju.vip/k/?url='>万能接口7</option>  
+               <option  value='https://api.jiexi.la/?url='>万能接口1</option>
+    
     
         </select>
         <div class="searchs">
             <div class="from">
                 <input name="url" id="url" type="text" class="text"
                       placeholder="视频地址">
-                             
-<input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="播放">
+                            <input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="播放">
             </div>
             <div id="clear"></div>
         </div>
@@ -58,7 +56,7 @@
 
 
                     if (jiekou == "") {	
-                        document.getElementById("jiekou").src = "http://jiexi.shunyiwenxiu.com/?url=" + url;	
+                        document.getElementById("jiekou").src = "https://api.sigujx.com/?url=" + url;	
                     } else {	
                         document.getElementById("jiekou").src = jiekou + url;	
                     }	
