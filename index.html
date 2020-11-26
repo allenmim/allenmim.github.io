@@ -1,80 +1,73 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>2222</title>
-    
-    <div class="centers">
-        <select style="border:0px;font-size:18px" onchange="xuanzejiekou(this)" id="vip_iterface">
-               <option  value='https://api.jiexi.la/?url='>万能接口1</option>
-               <option  value='https://api.3jx.top/vip/?url='>万能接口2</option>
-               <option  value='https://jx.618g.com/?url='>万能接口3</option>
-               <option  value='https://jiexi.380k.com/?url='>万能接口4</option>
-               <option  value='https://api.sigujx.com/?url='>万能接口5</option>
-               <option  value='https://z1.m1907.cn/?jx='>万能接口6</option>
-               <option  value='https://cdn.yangju.vip/k/?url='>万能接口7</option>
-        </select>
-        <div class="searchs">
-            <div class="from">
-                <input name="url" id="url" type="text" class="text"
-                      placeholder="视频地址">
-                <input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="立即播放">
-            </div>
-            <div id="clear"></div>
-        </div>
-        <div id="ckplays">
-            <iframe   width="90%"  height='900px' frameborder='0' style="background-color: #ecf5ff" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"    allow="autoplay"   id="jiekou"     ></iframe>
-
-        </div>
-        <div class="tips">
-            <div id="clear" class="height20"></div>
-
-            </div>	
-            <script type="text/javascript">	
-                $("#doplayers").bind("click", function () {	
-                    players()	
-                });	
-
-                function players() {	
-                    var a = $('#url').val();	
-                    if ($('#url').val() == "") {	
-                        alert('请输入视频网站网址！');	
-                        $('#url').focus();	
-                        return (false)	
-                    }	
-                }	
-
-                var jiekou = $("#vip_iterface").val();	
-                function jiexi() {	
-                    var url = document.getElementById("url").value;	
-                    var dizhi = ""	
-
-                    if (url.indexOf("://") == -1) {	
-                        url = "http://" + document.getElementById("url").value;	
-                    }	
-
-
-
-                    if (jiekou == "") {	
-                        document.getElementById("jiekou").src = "http://jiexi.shunyiwenxiu.com/?url=" + url;	
-                    } else {	
-                        document.getElementById("jiekou").src = jiekou + url;	
-                    }	
-                }	
-
-                function xuanzejiekou(v) {	
-                    var url = document.getElementById("url").value;	
-                    if (url == "") {	
-                        alert('请输入视频网站网址！');	
-                    } else {	
-                        jiekou = v.value	
-                    }	
-                }	
-            </script>	
-        </div>	
-    </div>	
+<meta charset="utf-8" />
+<meta name="viewport" content="width=100%, initial-scale=1" />
+<title>随心 - ⎛⎝VIP视频解析⎠⎞</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<meta name="keywords" content="随心解析,全民解析,vip解析,视频解析" />
+<meta name="description" content="随心解析，是一个全网最大的免费VIP视频解析福利网站，大家多多支持！方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看！" />
+<link rel="stylesheet" type="text/css" href="style.css" data-for="result">
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="499862fd6f6d92b0c0bc5dcb-text/javascript"></script>
+<script type="499862fd6f6d92b0c0bc5dcb-text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('b a(){0 6=1.2("9").4;0 5=1.2("3");0 3=1.2("3").c;0 8=5.e[3].4;0 7=1.2("f");7.d=8+6}',16,16,'var|document|getElementById|jk|value|jkurl|diz|cljurl|jkv|url|dihejk|function|selectedIndex|src|options|player'.split('|'),0,{}))
+function dihejk2() {
+       var diz = document.getElementById("url").value;
+       var jkurl = document.getElementById("jk");
+       var jk = document.getElementById("jk").selectedIndex;
+       var jkv = jkurl.options[jk].value;
+       var cljurl = document.getElementById("player");
+       window.open(jkv + diz,"_blank");}
+</script>
+</head>
+<body style="background: url(&quot;images/bgimg.png&quot;);">
+<div class="top-1">
+<div class="container clear">
+<div class="logo">
+<a href=""><img src="images/logo.png" /></a>
 </div>
-            
-            
-            
+<ul>
+<li></li>
+</ul>
+</div>
+</div>
+<div class="container clear">
+<div class="cnt-t clear">
+<span>
+<marquee behavior="scroll">《浮生》一生一世一双人，半醉半醒半浮生!《随心》随心随意谁心动，少说多做不错事！
+</marquee>
+</span>
+</div>
+<div>
+</div>
+<div class="cnt-t2 clear">
+<iframe src="ff.html" id="player" width="100%" height="450px" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cnt-3 clear">
+<form method="get">
+<div class="cnt-3-1">
+<select class="form-control input-lg" id="jk">
+<option value="https://api.sigujx.com/jx/?url=">推荐高清接口</option>
+<option value="http://jqaaa.com/jx.php?url=">①号引擎【稳定通用】</option>
+<option value="http://yun.baiyug.cn/vip/index.php?url=">②号引擎【稳定通用】</option>
+<option value="http://jqaaa.com/jq3/?url=">③号引擎【稳定快速】</option>
+<option value="https://jiexi.071811.cc/jx2.php?url=">④号引擎【稳定通用】</option>
+<option value="http://jx.du2.cc/?url=">⑤号引擎【左上点播】</option>
+<option value="http://api.bbbbbb.me/jx/?url=">⑥号引擎【稳定通用】</option>
+<option value="http://jx.598110.com/?url=">⑦号引擎【稳定通用】</option>
+<option value="https://api.47ks.com/webcloud/?v=">⑧号引擎【稳定通用】</option>
+<option value="http://jx.618ge.com/?url=">⑨号引擎【稳定通用】</option>
+<option value="http://beaacc.com/api.php?url=">⑩号引擎【超级通用】</option>
+<option value="http://app.baiduoos.cn:2019/vip/index.php?url=">⑪号引擎【超级通用】</option>
+<option value="http://jx.wslmf.com/?url=">⑫号引擎【稳定通用】</option>
+<option value="http://beaacc.com/api.php?url=">⑬号引擎【稳定通用】</option>
+</select>
+</div>
+<div class="cnt-3-2">
+<input class="form-control input-lg" type="search" placeholder="输入需要会员的视频播放地址" id="url" autocomplete="off">
+</div>
+<div class="cnt-3-3">
+&nbsp;
+<button id="bf" type="button" class="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; dihejk()" data-cf-modified-499862fd6f6d92b0c0bc5dcb-="">播放</button>
+&nbsp;
+<button id="bf" type="button" class="btn" onclick="if (!window.__cfRLUnblockHandlers) return false; dihejk2()" data-cf-modified-499862fd6f6d92b0c0bc5dcb-="">全屏播放</button>
