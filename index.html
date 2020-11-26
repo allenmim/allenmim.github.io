@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 
 </header>  <div class="am-container">
-    <div class="logo">VIP在线视频解析</div>
+    <div class="logo">2222222222视频解析</div>
     <div class="am-u-lg-6 search">
       <form method="post" id="str-post" class="am-input-group am-input-group-primary">
         <input type="text" name="url" placeholder="请输入播放地址" autocomplete="off" class="am-form-field s-input">
@@ -37,5 +37,65 @@
         </span>
 
 
+  
+        </select>
+        <div class="searchs">
+            <div class="from">
+                <input name="url" id="url" type="text" class="text"
+                      placeholder="视频地址">
+                            <input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="播放">
+            </div>
+            <div id="clear"></div>
+        </div>
+        <div id="ckplays">
+            <iframe   width="75%"  height='900px' frameborder='0' style="background-color: #ecf5ff" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"    allow="autoplay"   id="jiekou"     ></iframe>
 
+        </div>
+        <div class="tips">
+            <div id="clear" class="height20"></div>
+
+            </div>	
+            <script type="text/javascript">	
+                $("#doplayers").bind("click", function () {	
+                    players()	
+                });	
+
+                function players() {	
+                    var a = $('#url').val();	
+                    if ($('#url').val() == "") {	
+                        
+                        $('#url').focus();	
+                        return (false)	
+                    }	
+                }	
+
+                var jiekou = $("#vip_iterface").val();	
+                function jiexi() {	
+                    var url = document.getElementById("url").value;	
+                    var dizhi = ""	
+
+                    if (url.indexOf("://") == -1) {	
+                        url = "http://" + document.getElementById("url").value;	
+                    }	
+
+
+
+                    if (jiekou == "") {	
+                        document.getElementById("jiekou").src = "https://api.sigujx.com/?url=" + url;	
+                    } else {	
+                        document.getElementById("jiekou").src = jiekou + url;	
+                    }	
+                }	
+                function xuanzejiekou(v) {	
+                    var url = document.getElementById("url").value;	
+                    if (url == "") {	
+                    
+                    } else {	
+                        jiekou = v.value	
+                    }	
+                }	
+            </script>		
+        </div>		
+    </div>		
+</div>	
 
