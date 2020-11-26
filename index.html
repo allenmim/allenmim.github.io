@@ -1,140 +1,78 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.thymeleaf.org">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>全民解析-vip视频在线解析</title>
-
-    <link href="img/favicon.ico" rel="shortcut icon" />
-    <meta name="keywords" content="vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析,vip音乐解析">
-    <meta name="description" content="全民解析VIP视频免费看，在线解析，vip视频解析，优酷vip解析，爱奇艺vip解析，腾讯vip解析，乐视vip解析，全网影视vip，芒果vip解析方便广大用户VIP视频服务，最新电影最新电视剧在线免费观看">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
-    <meta name="bytedance-verification-code" content="9HFkjcM0R0WGL7UF2HRo" />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-            font-size: 14px;
-            line-height: 1.42857143;
-            color: #333;
-            background-color: #fff;
-        }
-        marquee{font:32px "宋体"}
-        h1 {
-            font-family: inherit;
-            font-weight: 500;
-            line-height: 1.1;
-        }
-
-        .unit-100 a {
-            text-decoration: none;
-            display: inline-block;
-            width: 130px;
-            height: 30px;
-            line-height: 30px;
-            border: 3px solid #5cb85c;
-            margin-right: 14px;
-            /*padding-top: 5px;*/
-            padding-right: 20px;
-            /*padding-bottom: 5px;*/
-            padding-left: 20px;
-            margin-bottom: 5px;
-            color: #FFFFFF;
-            background: #5cb85c;
-            border-radius: 5px;
-        }
-
-
-        .myshuoming ul li {
-            margin-bottom: 10px;
-            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-            color: #777;
-        }
-
-        .footer ul li {
-            list-style: none;
-        }
-
-        .wenxin ul:first-child {
-        }
-
-        .wenxin ul li a {
-            text-decoration: none;
-            color: #FFFFFF;
-            background: #5cb85c;
-            display: inline-block;
-            padding:3px 10px;
-            border-radius:5px;
-        }
-
-    </style>
-    <script src="js/jquery.min.js"></script>
-
-    <script src="js/bootstrap.min.js"></script>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>VIP视频在线解析</title>
+  <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,视频解析,全能VIP视频解析,视频在线解析" />
+  <meta name="description" content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将它介绍给您的朋友！" />
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/amazeui.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/video.css" data-for="result">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <style>
+  	.wrapper{padding:0 1rem;}
+  </style>
 </head>
-<body background="/img/bj.png">
-<div class="container">
+<body >
+  <!--[if lt IE 9]> 
+　　　　<script src="./js/css3-mediaqueries.js"></script> 
+<![endif]-->
+<header class="aim-topbar">
+  <div class="aim-header">
+    <div class="aim-title"><a href="">全民解析</a></div>
+    <div class="aim-fa-bars"><button class="aim-menu"><span class="aim-icon fa fa-bars"></span></button></div>
+    <div class="aim-collapse" id="doc-topbar-collapse">
+      <ul class="aim-topbar-nav">
+          <li class="aim-active"><a href="/">首页</a></li>
+          <!--  <li class="aim-noset"><a href="https://www.ddayh.com/">APP下载</a></li> -->
+      </ul>
+      <div class="aim-topbar-right">
+        <button class="aim-btn" data-am-modal="{target: '#juanzhu'}">捐助</button>
+      </div>
+    </div>
+  </div>
+</header>
 
-
-    <!--<input type="hidden" id="userId" value="#userId==null?'':userId">-->
-    <!--<marquee align="absmiddle" bgcolor="#DCE2F1"  padding-top="40"   height="50" align="center" cellpadding="0" cellspacing="0" >由于近期用户数大增,服务器带宽等成本加大，为更好的服务用户，本网站将于近期推出每个用户每月1块钱的收费制度，感谢各位的谅解和支持。</marquee>-->
-    <section class="topbar">
-        <h1 class="text-center" style="font-weight: normal; color: #777">蚂蚁vip视频在线解析</h1>
-        <h3 class="text-center" style="font-weight: normal; color: #777">免费全网影视VIP视频vip会员免广告看电影！ 若播放异常，刷新，更换接口尝试哦！</h3>
-    </section>
-
-    <section class="content">
-        <section>
-            <div class="text-center" id="videodiv">
-
-
-                
-
-                <iframe id="iframId" width=100% height=350  src="https://z1.m1907.cn/?jx=" frameborder=0 allowfullscreen></iframe>
-            </div>
-        </section>
-
-
-        <section class="" style="margin-top: 30px;">
-
-            <div class="form-group">
-                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                <div class="input-group">
-                    <div class="input-group-addon">选择接口</div>
-                    <select class="form-control jiekou">
-                        <!--<option value="1" selected="">七号通用vip引擎系统【稳定通用】</option>-->
-                        <!--<option value="2" selected="">六号通用vip引擎系统【稳定通用】</option>-->
-                        <!--<option value="3" selected="">五号通用vip引擎系统【超级稳定通用】</option>-->
-                        <!--<option value="4" selected="">四号通用vip引擎系统【稳定通用】</option>-->
-                        <!--<option value="5" selected="">三号通用vip引擎系统【稳定通用】</option>-->
-                        <!--<option value="6" selected="">二号通用vip引擎系统【稳定通用】</option>-->
-                        <!--<option value="7" >一号通用vip引擎系统【稳定通用】</option>-->
-                        <!--<option value="8" selected="true">默认引擎系统【稳定通用】</option>-->
-
-                        <option value="http://jx.du2.cc/?url=">一号通用vip引擎系统【稳定通用</option>
-
-                        <option value="http://jx.drgxj.com/?url=">二号通用vip引擎系统【稳定通用</option>
-
-                        <option value="http://vip.jlsprh.com/?url=">三号通用vip引擎系统【稳定通用</option>
-
-                        <option value="https://jiexi.380k.com/?url=">六号通用vip引擎系统【稳定通用</option>
-
-                        <option value="http://jx.598110.com/?url=">五号通用vip引擎系统【稳定通用</option>
-
-                        <option value="https://z1.m1907.cn/?jx=">七号通用vip引擎系统【稳定通用</option>
-
-                        <option value="http://vip.jlsprh.com/?url=">四号通用vip引擎系统【稳定通用</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                <div class="input-group">
-                    <div class="input-group-addon">输入网址</div>
-                    <input type="text" class="form-control" id="inputUrl" placeholder="请输入视频网址" />
-                </div>
-            </div>
-
-            <button type="button" id="btnOk"  style="margin-bottom: 10px;" class="btn btn-success btn-lg btn-block"><i class="fa">搜索</i></button>
-        </section>
+  <div class="wrapper">
+  <div class="nav">
+    <p>VIP在线视频解析</p>
+  </div>
+<div class="container clear">
+		<div class="cnt-3 clear">
+		 <form method="get" >
+      <div class="cnt-3-1">
+        <select class="form-control input-lg" id="jk">
+        
+<option value="http://mh.fc233.top:8899/v/?url=" selected="">推荐线路</option>
+<option value="https://jiexi.071811.cc/jx.php?url=">石头解析</option>
+<option value="http://www.sfsft.com/admin.php?url=">无名小站</option>
+<option value="http://mh.fc233.top:8899/v/?url=">VIP看看</option>
+<option value="http://www.wmxz.wang/video.php?url=">线路1</option>
+<option value="https://jqaaa.com/jx.php?url=">线路2</option>
+<option value="https://ejiafarm.com/jx.php?url=">线路3</option>
+<option value="https://beaacc.com/api.php?url=">线路4</option>
+<option value="https://yun.odflv.com/?url=">线路5</option>
+<option value="http://api.bbbbbb.me/jx/?url=">线路6</option>
+<option value="http://www.47jx.com/?url=">线路7</option>
+<option value="http://jx.du2.cc/?url=">线路8</option> 
+<option value="http://jx.598110.com/?url=">线路9</option>
+<option value="http://jx.618ge.com/?url=">线路10</option>
+<option value="http://vip.jlsprh.com/?url=">线路11</option>
+<option value="http://jx.drgxj.com/?url=">线路12</option> 
+<option value="http://17kyun.com/api.php?url=">线路13</option>
+</select>
+    </div>
+		<div class="cnt-3-2">
+<input class="form-control input-lg" type="search" placeholder="输入需要会员的视频播放地址" id="url" autocomplete="off"  onkeypress="if(event.keyCode==13){getkey();}">
+		</div>
+    <div class="cnt-3-3">
+			<button id="bf" type="button" class="btn" onclick="dihejk()" onkeypress="getkey();">播放</button>
+		</div>
+		</form>
+	</div>
+	<div class="cnt-t2 clear">
+    <iframe allowfullscreen="true" allowtransparency="true" id="player" frameborder="0" src="ff.html"></iframe>
+	</div>
+</div>
