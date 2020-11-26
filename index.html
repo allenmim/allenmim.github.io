@@ -1,73 +1,94 @@
-<!DOCTYPE>
-<div class="centers">
-<select style="border:0px;font-size:14px" onchange="xuanzejiekou(this)" id="vip_iterface">
-               <option  value='https://api.3jx.top/vip/?url='>万能接口2</option>
-               <option  value='https://jx.618g.com/?url='>万能接口3</option>
-               <option  value='https://jiexi.380k.com/?url='>万能接口4</option>
-               <option  value='https://api.sigujx.com/?url='>万能接口5</option>
-               <option  value='https://z1.m1907.cn/?jx='>万能接口6</option>
-               <option  value='https://cdn.yangju.vip/k/?url='>万能接口7</option>  
-               <option  value='https://api.jiexi.la/?url='>万能接口1</option>
-    
-    
-        </select>
-        <div class="searchs">
-            <div class="from">
-                <input name="url" id="url" type="text" class="text"
-                      placeholder="视频地址">
-                            <input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="播放">
-            </div>
-            <div id="clear"></div>
+
+<!DOCTYPE html>
+<html>
+<head
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.flat.min.css">
+<link rel="stylesheet" type="text/css" href="/css/public.css?v=200416">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="https://thirdqq.qlogo.cn/g?b=sdk&k=fXJhGbvrIeja8vD6FckWXA&s=640">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<!--[if IE]><script>window.location.href="http://tool.liumingye.cn/support/?referrer="+encodeURIComponent(location.href);</script><![endif]-->  <title>全能VIP视频在线解析 - 刘明野的工具箱</title>
+  <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,视频解析,全能VIP视频解析,视频在线解析">
+  <meta name="description" content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将它介绍给您的朋友！">
+  <link rel="stylesheet" type="text/css" href="css/video.css?0709">
+</head>
+<body>
+  <header class="am-topbar am-topbar-inverse">
+<div class="am-container">
+<p class="am-topbar-brand"><a href="./" class="am-topbar-logo">视频解析</a></p>
+<a class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航</span> <span class="am-icon-bars"></span></a>
+<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+<ul class="am-nav am-nav-pills am-topbar-nav">
+<li><a href="/">首页</a></li>
+</ul>
+<div class="am-topbar-right">
+<a class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-modal="{target: '#fenxiang'}">分享</a>
+</div>
+</div>
+</div>
+</header>  <div class="am-container">
+    <div class="logo">VIP在线视频解析</div>
+    <div class="am-u-lg-6 search">
+      <form method="post" id="str-post" class="am-input-group am-input-group-primary">
+        <input type="text" name="url" placeholder="请输入播放地址后解析,支持爱奇艺,优酷,土豆等VIP视频播放地址" autocomplete="off" class="am-form-field s-input">
+        <span class="am-input-group-btn">
+    <select data-am-selected="{btnWidth:125,maxHeight:220}">
+      <option value="https://www.8090g.cn/?url=">8090g</option>
+      <option value="https://jiexi.071811.cc/jx.php?url=">石头解析</option>
+      <option value="http://jx.598110.com/?url=">一号</option>
+      <option value="http://vip.jlsprh.com/?url=">二号</option>
+      <option value="http://jx.618ge.com/?url=">三号</option>
+      <option value="http://jx.drgxj.com/?url=">四号</option>
+      <option value="http://jx.du2.cc/?url=">五号</option>
+      <option value="https://vip.mpos.ren/v/?url=">人人解析</option>
+      <option value="http://jx.618g.com/?url=">618G</option>
+      <option value="http://jx.cesms.cn/?url=">大亨影院解析</option>
+      <option value="https://660e.com/?url=">乐乐云</option>
+      <option value="https://www.administratorw.com/admin.php?url=">无名小站</option>
+      <option value="https://www.administratorw.com/video.php?url=">无名小站2</option>
+      <option value="http://api.baiyug.vip/index.php?url=">百域阁</option>
+      <option value="http://www.1717yun.com/jx/vip/index.php?url=">1717云</option>
+      <option value="http://j.zz22x.com/jx/?url=">花园解析</option>
+      <option value="https://vip.bljiex.com/?v=">BL解析</option>
+      <option value="https://17kyun.com/api.php?url=">易看</option>
+      <option value="https://z1.m1907.cn/?a=1&jx=">m1907</option>
+      <option value="https://api.123zx.net/m3u8/play.html?id=">33UU</option>
+      <option value="https://2.08bk.com/?url=">小七</option>
+    </select>
+          <button class="am-btn am-btn-primary" type="submit"><span class="am-icon-play"></span></button>
+        </span>
+    </form>
+    </div>
+    <iframe allowfullscreen="true" allowtransparency="true" id="player" frameborder="0" src="//tool.liumingye.cn/video/player-logo.html"></iframe>
+    <div class="am-text-right">
+<a class="am-btn am-btn-primary am-round" data-am-modal="{target: '#fenxiang'}"><i class="am-icon-share-alt"></i> 分享</a>
+    </div>
+    <div class="am-alert am-alert-secondary">
+      <p>本站支持解析百度网盘，优酷，乐视，芒果，搜狐，快手，土豆，PPTV，华数TV，爱奇艺，腾讯，优酷，ACFUN，哔哩哔哩，QQ空间视频，韩国棒子云，搜狐云，M3U8，1905电影，拉面网，音悦台，美拍，秒拍，酷6，56视频，cctv央视网，糖豆网，6间房，网易公开课，虎牙，凤凰，龙珠，YY神曲，17173等网站视频</p>
+    </div>
+    <div class="am-popup" id="player">
+      <div class="am-popup-inner">
+        <div class="am-popup-hd">
+          <h4 class="am-popup-title">视频播放器</h4>
+          <span data-am-modal-close class="am-close">&times;</span>
         </div>
-        <div id="ckplays">
-            <iframe   width="75%"  height='900px' frameborder='0' style="background-color: #ecf5ff" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"    allow="autoplay"   id="jiekou"     ></iframe>
-
-        </div>
-        <div class="tips">
-            <div id="clear" class="height20"></div>
-
-            </div>	
-            <script type="text/javascript">	
-                $("#doplayers").bind("click", function () {	
-                    players()	
-                });	
-
-                function players() {	
-                    var a = $('#url').val();	
-                    if ($('#url').val() == "") {	
-                        
-                        $('#url').focus();	
-                        return (false)	
-                    }	
-                }	
-
-                var jiekou = $("#vip_iterface").val();	
-                function jiexi() {	
-                    var url = document.getElementById("url").value;	
-                    var dizhi = ""	
-
-                    if (url.indexOf("://") == -1) {	
-                        url = "http://" + document.getElementById("url").value;	
-                    }	
-
-
-
-                    if (jiekou == "") {	
-                        document.getElementById("jiekou").src = "https://api.sigujx.com/?url=" + url;	
-                    } else {	
-                        document.getElementById("jiekou").src = jiekou + url;	
-                    }	
-                }	
-                function xuanzejiekou(v) {	
-                    var url = document.getElementById("url").value;	
-                    if (url == "") {	
-                    
-                    } else {	
-                        jiekou = v.value	
-                    }	
-                }	
-            </script>		
-        </div>		
-    </div>		
-</div>	
-                
+        <div class="am-popup-bd"></div>
+      </div>
+    </div>
+  </div>
+<footer>
+	<div class="am-container">
+		<p><span class="intro-siteinfo">♪(^∇^*) 一言加载中...</span><br>
+		资源来源于网络，如有侵权，请联系本人予以删除！<br>
+		<span id="busuanzi_container_site_pv">访问量<span id="busuanzi_value_site_pv"></span>次</span>，访客数<span id="busuanzi_value_site_uv"></span>人次<br>
+		© 2015 - 2020</p>
+	</div>
+</footer>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="/js/public.js?v=200416"></script><script src="js/video.js?0122"></script>
+</body>
+</html>
