@@ -47,7 +47,7 @@
                 function players() {	
                     var a = $('#url').val();	
                     if ($('#url').val() == "") {	
-                        alert('请输入视频网站网址！');	
+                        alert('频网站网址！');	
                         $('#url').focus();	
                         return (false)	
                     }	
@@ -70,9 +70,11 @@
                         document.getElementById("jiekou").src = jiekou + url;	
                     }	
                 }	
-                                function xuanzejiekou(v) {	
+                function xuanzejiekou(v) {	
                     var url = document.getElementById("url").value;	
-                	
+                    if (url == "") {	
+                        alert('请输！');	
+                    } else {	
                         jiekou = v.value	
                     }	
                 }	
