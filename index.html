@@ -1,1 +1,154 @@
-</span></p></div><i class="point"><b></b><u></u></i></div><div class="crumb"><b></b><div class="wrapper"><ul><li><a href="/" title="主页" class="hub">主页</a></li><li><i><b></b><u></u></i></li><li><a href="/jiexi" title="VIP视频解析" class="hub">VIP视频解析</a></li></ul></div></div><div class="wrapper"><div class="center"><div class="url"><input type="text" placeholder="输入VIP视频地址，例：http://www.iqiyi.com/v_19rrehqphw.html" onkeyup="Jiexi.input.keyup(this)" /><a href="javascript:;" onclick="Jiexi.input.empty(this)" title="清空" class="empty hide" rel="nofollow"><div class="icon"><img src="//resource.cxtv1.com/image/icon.wrong.3d9ecf.png" /></div></a></div><div id="record" class="record"><div class="list play"><div class="head"><h2 title="选择线路">选择线路</h2></div><div class="body"><ul><li><h4>VIP解析线路1</h4><em>全网通用</em><div class="action"><s></s><ul><li><a href="javascript:;" data-api="https://jx.idc126.net/jx/?url={0}" onclick="javascript:Jiexi.go(this);" rel="nofollow">点击解析</a></li></ul></div></li><li><h4>VIP解析线路2</h4><em>稳定推荐</em><div class="action"><s></s><ul><li><a href="javascript:;" data-api="http://jx.598110.com/?url={0}" onclick="javascript:Jiexi.go(this);" rel="nofollow">点击解析</a></li></ul></div></li><li><h4>VIP解析线路3</h4><div class="action"><s></s><ul><li><a href="javascript:;" data-api="http://jx.drgxj.com/?url={0}" onclick="javascript:Jiexi.go(this);" rel="nofollow">点击解析</a></li></ul></div></li><li><h4>VIP解析线路4</h4><div class="action"><s></s><ul><li><a href="javascript:;" data-api="http://vip.jlsprh.com/?url={0}" onclick="javascript:Jiexi.go(this);" rel="nofollow">点击解析</a></li></ul>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>fastsoso在线视频解析</title>
+    <link href="/favicon.ico" rel="shortcut icon"/>
+    <meta name="keywords" content="芒果VIP解析,腾讯VIP解析,优酷VIP解析，爱奇艺VIP解析，乐视VIP解析">
+    <meta name="description"
+          content="fastsoso为广大网友提供芒果VIP解析,优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将她介绍给您的朋友">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <link href="/css/newcommons.css" rel="stylesheet" type="text/css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1691507666889239",
+            enable_page_level_ads: true
+        });
+    </script>
+</head>
+<body>
+<div class="head-v3">
+    <div class="navigation-up">
+        <div class="navigation-inner">
+            <div class="navigation-v3">
+                <ul>
+                    <li class="nav-up-selected-inpage" _t_nav="home">
+                        <h2>
+                            <a href="/">首页</a>
+                        </h2>
+                    </li>
+                    <li class _t_nav="hd">
+                        <h2>
+                            <a href="http://www.fastsoso.cn">网盘搜索</a>
+                        </h2>
+                    </li>
+                    <li class _t_nav="hd">
+                        <h2>
+                            <a href="http://video.fastsoso.cn">全网视频搜索</a>
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </br>
+    <p align="“center&quot;">复制VIP视频的地址到↓↓↓↓↓栏中点击立即播放就行了！如果不能播放请在选择接口处更改接口!</p>
+    <div class="centers">
+        <select style="border:0px;font-size:18px" onchange="xuanzejiekou(this)" id="vip_iterface">
+                          <option selected='selected' value='https://api.jiexi.la/?url='>万能接口1</option>
+               <option  value='https://api.3jx.top/vip/?url='>万能接口2</option>
+               <option  value='https://jx.618g.com/?url='>万能接口3</option>
+               <option  value='https://jiexi.380k.com/?url='>万能接口4</option>
+               <option  value='https://api.sigujx.com/?url='>万能接口5</option>
+               <option  value='https://z1.m1907.cn/?jx='>万能接口6</option>
+               <option  value='https://cdn.yangju.vip/k/?url='>万能接口7</option>
+        </select>
+        <div class="searchs">
+            <div class="from">
+                <input name="url" id="url" type="text" class="text"
+                      placeholder="视频地址">
+                <input name="doplayers" type="button" id="doplayers" class="button" onclick="jiexi()" value="立即播放">
+            </div>
+            <div id="clear"></div>
+        </div>
+        <div id="ckplays">
+            <iframe   width="100%"  height='550px' frameborder='0' style="background-color: #ecf5ff" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"    allow="autoplay"   id="jiekou"     ></iframe>
+
+        </div>
+        <div class="tips">
+            <div id="clear" class="height20"></div>
+
+            </div>
+            <script type="text/javascript">
+                $("#doplayers").bind("click", function () {
+                    players()
+                });
+
+                function players() {
+                    var a = $('#url').val();
+                    if ($('#url').val() == "") {
+                        alert('请输入视频网站网址！');
+                        $('#url').focus();
+                        return (false)
+                    }
+                }
+
+                var jiekou = $("#vip_iterface").val();
+                function jiexi() {
+                    var url = document.getElementById("url").value;
+                    var dizhi = ""
+
+                    if (url.indexOf("://") == -1) {
+                        url = "http://" + document.getElementById("url").value;
+                    }
+
+
+                    if (jiekou == "") {
+                        document.getElementById("jiekou").src = "http://jiexi.shunyiwenxiu.com/?url=" + url;
+                    } else {
+                        document.getElementById("jiekou").src = jiekou + url;
+                    }
+                }
+
+                function xuanzejiekou(v) {
+                    var url = document.getElementById("url").value;
+                    if (url == "") {
+                        alert('请输入视频网站网址！');
+                    } else {
+                        jiekou = v.value
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</div>
+<footer  style="text-align: center">本站所有接口均来至互联网仅提供本地测试使用，请勿用于任何商业用途，否则后果自负。</footer>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ec95a847777de298ab41052420a660c4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-89299629-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
