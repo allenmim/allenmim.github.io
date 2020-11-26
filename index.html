@@ -1,78 +1,53 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-  <title>VIP视频在线解析</title>
-  <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,视频解析,全能VIP视频解析,视频在线解析" />
-  <meta name="description" content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将它介绍给您的朋友！" />
-  <link rel="shortcut icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/amazeui.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/video.css" data-for="result">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <style>
-  	.wrapper{padding:0 1rem;}
-  </style>
-</head>
-<body >
-  <!--[if lt IE 9]> 
-　　　　<script src="./js/css3-mediaqueries.js"></script> 
-<![endif]-->
-<header class="aim-topbar">
-  <div class="aim-header">
-    <div class="aim-title"><a href="">全民解析</a></div>
-    <div class="aim-fa-bars"><button class="aim-menu"><span class="aim-icon fa fa-bars"></span></button></div>
-    <div class="aim-collapse" id="doc-topbar-collapse">
-      <ul class="aim-topbar-nav">
-          <li class="aim-active"><a href="/">首页</a></li>
-          <!--  <li class="aim-noset"><a href="https://www.ddayh.com/">APP下载</a></li> -->
-      </ul>
-      <div class="aim-topbar-right">
-        <button class="aim-btn" data-am-modal="{target: '#juanzhu'}">捐助</button>
-      </div>
-    </div>
-  </div>
-</header>
-
-  <div class="wrapper">
-  <div class="nav">
-    <p>VIP在线视频解析</p>
-  </div>
-<div class="container clear">
-		<div class="cnt-3 clear">
-		 <form method="get" >
-      <div class="cnt-3-1">
-        <select class="form-control input-lg" id="jk">
-        
-<option value="http://mh.fc233.top:8899/v/?url=" selected="">推荐线路</option>
-<option value="https://jiexi.071811.cc/jx.php?url=">石头解析</option>
-<option value="http://www.sfsft.com/admin.php?url=">无名小站</option>
-<option value="http://mh.fc233.top:8899/v/?url=">VIP看看</option>
-<option value="http://www.wmxz.wang/video.php?url=">线路1</option>
-<option value="https://jqaaa.com/jx.php?url=">线路2</option>
-<option value="https://ejiafarm.com/jx.php?url=">线路3</option>
-<option value="https://beaacc.com/api.php?url=">线路4</option>
-<option value="https://yun.odflv.com/?url=">线路5</option>
-<option value="http://api.bbbbbb.me/jx/?url=">线路6</option>
-<option value="http://www.47jx.com/?url=">线路7</option>
-<option value="http://jx.du2.cc/?url=">线路8</option> 
-<option value="http://jx.598110.com/?url=">线路9</option>
-<option value="http://jx.618ge.com/?url=">线路10</option>
-<option value="http://vip.jlsprh.com/?url=">线路11</option>
-<option value="http://jx.drgxj.com/?url=">线路12</option> 
-<option value="http://17kyun.com/api.php?url=">线路13</option>
-</select>
-    </div>
-		<div class="cnt-3-2">
-<input class="form-control input-lg" type="search" placeholder="输入需要会员的视频播放地址" id="url" autocomplete="off"  onkeypress="if(event.keyCode==13){getkey();}">
-		</div>
-    <div class="cnt-3-3">
-			<button id="bf" type="button" class="btn" onclick="dihejk()" onkeypress="getkey();">播放</button>
-		</div>
-		</form>
-	</div>
-	<div class="cnt-t2 clear">
-    <iframe allowfullscreen="true" allowtransparency="true" id="player" frameborder="0" src="ff.html"></iframe>
-	</div>
 </div>
+
+
+
+	
+<div class="am-input-group am-input-group-primary am-margin-bottom">
+    <input value="" id="video-url" type="text" class="am-form-field" placeholder="粘贴原视频播放链接..." required="">	
+    <span class="am-input-group-btn">
+        <button id="btn-vip-play" class="am-btn am-btn-primary" type="submit">
+            <span class="am-icon-play-circle"></span> 破解播放
+        </button>
+    </span>
+</div>
+
+<div class="am-panel am-panel-default">
+    <div class="am-panel-hd">视频解析播放</div>
+	<div class="am-panel-bd player-box" style="position:relative;">
+		<iframe id="ty-vip-player" src="" width="100%" height="100%" allowfullscreen="true" allowtransparency="true"></iframe>
+		<div class="scroll">
+			<a class="close_tips" href="javascript:void(0);" title="点击关闭提示" onclick="this.parentNode.remove();"><i class="am-icon-close"></i></a>
+			<div class="scrollDiv">
+				<div>
+					如果无法播放请更换播放源，或者切换解析接口。<br>
+					视频载入速度跟网速有关，请耐心等待几秒钟。<br>		
+					不要轻易相信视频中的广告，谨防上当受骗!<br>		
+					视频中的<a class="am-badge am-badge-danger am-radius">棋牌、赌博</a>广告是开设在境外的非法诈骗网站，切勿相信！！		
+				</div>
+			</div>
+		</div>
+	</div>
+    
+</div>
+<div class="am-panel am-panel-default">
+    <div class="am-panel-hd">解析接口</div>
+    <div class="am-panel-bd">
+        如遇播放失败请尝试切换解析接口
+		<select id="sva" placeholder="切换视频解析接口" data-am-selected="{maxHeight: 500,btnSize: 'sm',dropUp:1}">
+			<option selected="" value=""></option>
+			<option value="aHR0cHM6Ly96MS5tMTkwNy5jbi8/ang9" data-ad="0" title="9077（线路正常）">9077（线路正常）</option>
+			<option value="aHR0cHM6Ly9hcGkuamlleGkubGEvP3VybD0=" data-ad="0" title="解析啦（每个接口）">解析啦（每个接口）</option>
+			<option value="aHR0cDovL2tqLmdvdWh5cy5jbi9hcHB6eS8wOTAzMTkxNi8/dXJsPQ==" data-ad="0" title="2566（可用）">2566（可用）</option>
+			<option value="aHR0cDovL2p4LnlwYXJzZS5jb20vaW5kZXgucGhwP3VybD0=" data-ad="2" title="步步高（不同接口）">步步高（不同接口）</option>
+			<option value="aHR0cHM6Ly9qeC5lcmdhbi50b3AvP3VybD0=" data-ad="0" title="二千（速度不同）">二千（速度不同）</option>
+			<option value="aHR0cHM6Ly9hcGkudHY5MjAuY29tL3ZpcC81NzIxMTQ5Lz91cmw9" data-ad="2" title="920线路（可用稳定）">920线路（可用稳定）</option>
+			<option value="aHR0cDovL2EueGRsbC54eXovP3VybD0=" data-ad="-1" title="小皮皮">小皮皮</option>
+			<option value="aHR0cDovL2p4Lm9rLTNlLmNvbS9jcy5waHA/dXJsPTE=" data-ad="-1" title="帮助（播放器改浏览器看）">帮助（播放器改浏览器看）</option>
+			<option value="aHR0cHM6Ly9qeC5odHYwMDkuY29tL2RtLz91cmw9" data-ad="-1" title="弹幕版">弹幕版</option>  
+		</select>
+    </div>
+</div>
+
+<div class="am-panel am-panel-default">
+    <div class="am-panel-hd">使用说明</div>
