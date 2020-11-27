@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <div class="centers">
 <select style="border:0px;font-size:14px" onchange="xuanzejiekou(this)" id="vip_iterface">
+  
                <option  value='https://api.3jx.top/vip/?url='>万能接口2</option>
                <option  value='https://jx.618g.com/?url='>万能接口3</option>
                <option  value='https://jiexi.380k.com/?url='>万能接口4</option>
@@ -26,50 +27,6 @@
         <div class="tips">
             <div id="clear" class="height20"></div>
 
-            </div>	
-            <script type="text/javascript">	
-                $("#doplayers").bind("click", function () {	
-                    players()	
-                });	
 
-                function players() {	
-                    var a = $('#url').val();	
-                    if ($('#url').val() == "") {	
-                        
-                        $('#url').focus();	
-                        return (false)	
-                    }	
-                }	
-
-                var jiekou = $("#vip_iterface").val();	
-                function jiexi() {	
-                    var url = document.getElementById("url").value;	
-                    var dizhi = ""	
-
-                    if (url.indexOf("://") == -1) {	
-                        url = "http://" + document.getElementById("url").value;	
-                    }	
-
-
-
-                
-                        document.getElementById("jiekou").src = "https://api.sigujx.com/?url=" + url;	
-                    } else {	
-                        document.getElementById("jiekou").src = jiekou + url;	
-                    }	
-                }	
-                function xuanzejiekou(v) {	
-                    var url = document.getElementById("url").value;	
-
-
-
-
-
-<font color="red">如不能播放请切换线路</font>
-<input type="button" value="线路一" onclick='qie("https://jx.618g.com/?url=");return false;'>
-<input type="button" value="线路二" onclick='qie("http://jk.ys.ylxzz.cn/jx/?url=");return false;' >
-<input type="button" value="线路三" onclick='qie("http://jx.du2.cc/?url=");return false;'>
-<input type="button" value="线路四" onclick='qie("http://jx.598110.com/?url=");return false;' >
-<input type="button" value="线路五" onclick='qie("http://jqaaa.com/jx.php?url=");return false;'><font color="red">)</font>
  
 
