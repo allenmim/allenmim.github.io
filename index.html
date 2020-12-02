@@ -31,23 +31,19 @@
 <option value="https://www.kpezp.cn/jlexi.php?url=">✔ 小蒋</option>
 <option value="https://api.sigujx.com/?url=" selected>✔ 思古</option>
 	   		   
-	
 
-<head>
-<script>
-function clear() {
-Source=document.body.firstChild.data;
-document.open();
-document.close();
-document.body.innerHTML=Source;
-}
-</script>
-</head>
-
-<body onload=clear()>
-<!–
-<div align=center>
+		
+		
+<select required id="searchurl">
+5<option value='http://so.le.com/s?wd=' >乐视搜索</option><option value='http://www.soku.com/search_video/q_' >优酷搜索</option><option value='http://so.iqiyi.com/so/q_' >爱奇艺搜索</option><option value='https://v.qq.com/x/search/?q=' >腾讯搜索</option><option value='https://so.mgtv.com/so/k-' >芒果搜索</option>
+</select>
 </div>
-–>
+<input type="text" id="searchcontent" value="" class="nes-input is-success" placeholder="输入视频名称">
+<button type="button" class="nes-btn is-success" onclick="search()" id="search">查找视频</button>
+<script>
+
+
+	
+	
 </body>
 </html>		
